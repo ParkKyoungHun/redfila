@@ -9,7 +9,14 @@ public class Working {
 	Emp emp;
 
 	@Autowired
-	public Working(Emp emp){
+	public Working(@Qualifier(value="programmer")Emp emp){
+		this.emp = emp;
+	}
+	
+	public Working(){}
+	
+	@Autowired
+	public void setEmp(@Qualifier(value="designer")Emp emp){
 		this.emp = emp;
 	}
 	
@@ -17,5 +24,12 @@ public class Working {
 		emp.gotoOffice();
 		System.out.println("일을 합니다...");
 		emp.getoffWork();
+	}
+	
+	public static void main(String[] args){
+		Programmer programmer = new Programmer();
+		Working w = new Working();
+		w.setEmp(programmer);
+		w.work();
 	}
 }

@@ -2,7 +2,7 @@ package test.biz.tj.ch09;
 
 import org.springframework.stereotype.Service;
 
-@Service
+@Service("programmer")
 public class Programmer implements Emp{
 
 	public void gotoOffice() {

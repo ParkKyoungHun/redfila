@@ -2,12 +2,15 @@ package test.biz.tj.ce;
 
 public class ExamImpl implements InterfaceExam1, InterfaceExam2 {
 
-	@Override
-	public void reCall() {
+	public void call() {
+		// TODO Auto-generated method stub
+		
 	}
 
-	@Override
-	public void call() {
+	public void reCall() {
+		// TODO Auto-generated method stub
+		
 	}
+
 
 }

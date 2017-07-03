@@ -5,7 +5,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service("om")
 public class OrderManagerApp {
 	static OrderManager om;
 	

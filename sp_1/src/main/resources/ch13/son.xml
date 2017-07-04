@@ -13,6 +13,20 @@
 			<ref parent="father2" /> 
 		</property>
 	</bean>
+	
+	<bean id="target4" class="test.biz.tj.ch13.Exam">
+		<property name="val1">
+			<ref parent="str1" /> 
+		</property>
+		<property name="val2">
+			<ref bean="str1" /> 
+		</property>
+	</bean>
+	<bean name="str1" class="java.lang.String">
+		<constructor-arg>
+			<value>son str1</value>
+		</constructor-arg>
+	</bean>
 	<bean id="father2" class="java.lang.String">
 		<constructor-arg>
 			<value>son bean 2</value>

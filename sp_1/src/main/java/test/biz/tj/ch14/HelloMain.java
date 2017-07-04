@@ -3,6 +3,7 @@ package test.biz.tj.ch14;
 import org.springframework.aop.framework.ProxyFactory;
 
 public class HelloMain {
+	
 	public static void main(String[] args) {
 		IPrintMsg target = new PrintMsg();
 		// Proxy 빈껍데기 생성

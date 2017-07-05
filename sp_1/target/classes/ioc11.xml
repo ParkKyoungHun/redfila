@@ -6,7 +6,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 	
 	<bean id="programmer" class="test.biz.tj.ch11.Programmer">
-		<replaced-method name="asdfasdf" replacer="designer"/>
+		<replaced-method name="work" replacer="designer"/>
 	</bean>
 	
 	

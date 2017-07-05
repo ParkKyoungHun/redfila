@@ -13,6 +13,6 @@ public class MethodReplaceTest {
 	public static void main(String[] args) {
 		ApplicationContext context = new ClassPathXmlApplicationContext("ioc11.xml");
 		MethodReplaceTest test = (MethodReplaceTest) context.getBean("methodReplaceTest");
-		System.out.println(test.programmer.asdfasdf());
+		System.out.println(test.programmer.work());
 	}
 }

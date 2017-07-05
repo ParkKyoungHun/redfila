@@ -9,7 +9,7 @@ public class Working {
 	Emp emp;
 
 	@Autowired
-	public Working(@Qualifier(value="programmer")Emp emp){
+	public Working(@Qualifier(value="designer")Emp emp){
 		this.emp = emp;
 	}
 	
@@ -27,9 +27,10 @@ public class Working {
 	}
 	
 	public static void main(String[] args){
-		Programmer programmer = new Programmer();
-		Working w = new Working();
-		w.setEmp(programmer);
+		Emp designer = new Designer();
+		Working w = new Working(designer);
 		w.work();
+//		w.setEmp(programmer);
+//		w.work();
 	}
 }

@@ -6,4 +6,14 @@ public class PrintMsg implements IPrintMsg{
 		System.out.println("Hello AOP...");
 	}
 
+	public void hello1() {
+		System.out.println("Hello AOP...1");
+		
+	}
+
+	public void hello2() {
+		System.out.println("Hello AOP...2");
+		
+	}
+
 }

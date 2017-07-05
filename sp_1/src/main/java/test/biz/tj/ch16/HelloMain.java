@@ -8,7 +8,7 @@ public class HelloMain {
 	
 	public static void main(String[] args) {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("ch16/ioc.xml");
-		IPrintMsg printMsg = (IPrintMsg) ctx.getBean("printMsg");
+		IPrintMsg printMsg = (IPrintMsg) ctx.getBean("testMsg");
 		printMsg.hello1();
 		printMsg.hello2();
 

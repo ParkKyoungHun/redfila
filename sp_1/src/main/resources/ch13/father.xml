@@ -8,5 +8,15 @@
 			<value>father bean 1</value>
 		</constructor-arg>
 	</bean>
-
+	<bean id="father2" class="java.lang.String">
+		<constructor-arg>
+			<value>father bean 2</value>
+		</constructor-arg>
+	</bean>
+	
+	<bean name="str1" class="java.lang.String">
+		<constructor-arg>
+			<value>father str1</value>
+		</constructor-arg>
+	</bean>
 </beans>

@@ -7,10 +7,12 @@
 	<aop:config>
 		<aop:aspect id="helloAspect" ref="myAroundAdvice">
 			<aop:pointcut id="selectHello1"
-				expression="execution(* test.biz.tj.ch16.PrintMsg.hello1(..))" />
+				expression="execution(* test.biz.tj.ch16.*Msg.*(..))" />
 			<aop:around pointcut-ref="selectHello1" method="setAdvice" />
 		</aop:aspect>
 	</aop:config>
 	<bean id="printMsg" class="test.biz.tj.ch16.PrintMsg" />
+	<bean id="testMsg" class="test.biz.tj.ch16.TestMsg" />
 	<bean id="myAroundAdvice" class="test.biz.tj.ch16.MyAroundAdvice" />
+	
 </beans>

@@ -13,6 +13,7 @@ public class HelloMain {
 		IPrintMsg proxy = (IPrintMsg) pf.getProxy();
 		proxy.hello1();
 		proxy.hello2();
+		
 		target = new PrintMsg2();
 		pf.setTarget(target);
 		proxy = (IPrintMsg) pf.getProxy();

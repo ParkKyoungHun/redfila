@@ -7,8 +7,8 @@
 	<bean id="programmer" class="test.biz.tj.ch07.Programmer" />
 	<bean id="designer" class="test.biz.tj.ch07.Designer" />
     <bean id="working" class="test.biz.tj.ch07.Working">
-    	<property name="emp1">
-    		<ref bean="programmer"/>
+    	<property name="emp">
+    		<ref bean="designer"/>
     	</property>
     </bean>
 </beans>

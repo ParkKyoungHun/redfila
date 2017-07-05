@@ -4,11 +4,11 @@ public class DogManager {
 	private Pudle pudle;
 	private Jindo jindo;
 
-	public void setPudle(Pudle pudle) {
+	public void setDog1(Pudle pudle) {
 		this.pudle = pudle;
 	}
 
-	public void setJindo(Jindo jindo) {
+	public void setDog2(Jindo jindo) {
 		this.jindo = jindo;
 	}
 

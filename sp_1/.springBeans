@@ -9,6 +9,7 @@
 	<configs>
 		<config>src/main/resources/ioc.xml</config>
 		<config>src/main/resources/ioc4.xml</config>
+		<config>src/main/resources/ch16/ioc.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>

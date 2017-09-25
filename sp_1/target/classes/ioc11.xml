@@ -8,9 +8,8 @@
 	<bean id="programmer" class="test.biz.tj.ch11.Programmer">
 		<replaced-method name="work" replacer="designer"/>
 	</bean>
-	
-	
 	<bean id="designer" class="test.biz.tj.ch11.Designer" />
+	
     <bean id="methodReplaceTest" class="test.biz.tj.ch11.MethodReplaceTest">
     	<property name="programmer">
     		<ref bean="programmer"/>

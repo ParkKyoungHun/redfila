@@ -11,7 +11,9 @@ public class MethodReplaceTest {
 	}
 
 	public static void main(String[] args) {
-		ApplicationContext context = new ClassPathXmlApplicationContext("ioc11.xml");
+		String path = "ioc11.xml";
+		ApplicationContext context;
+		context = new ClassPathXmlApplicationContext(path);
 		MethodReplaceTest test = (MethodReplaceTest) context.getBean("methodReplaceTest");
 		System.out.println(test.programmer.work());
 	}

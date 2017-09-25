@@ -1,13 +1,11 @@
 package test.biz.tj.ch15;
 
-import org.aopalliance.intercept.MethodInterceptor;
-import org.aopalliance.intercept.MethodInvocation;
+import org.aspectj.lang.ProceedingJoinPoint;
 
-public class MyAroundAdvice implements MethodInterceptor {
-	public Object invoke(MethodInvocation invocation) throws Throwable {
-		System.out.println("메소드 실행전 hello...");
-		Object ret = invocation.proceed();
-		System.out.println("메소드 실행후 hello...");
-		return ret;
+public class MyAroundAdvice {
+	public void setAdvice(ProceedingJoinPoint pjp) throws Throwable {
+		System.out.println("메소드 실행전 안녕...");
+		Object ret = pjp.proceed();
+		System.out.println("메소드 실행후 안녕...");
 	}
 }

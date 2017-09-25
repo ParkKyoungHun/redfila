@@ -11,6 +11,7 @@ public class HelloMain {
 		IPrintMsg printMsg = (IPrintMsg) ctx.getBean("testMsg");
 		printMsg.hello1();
 		printMsg.hello2();
-
+		printMsg = (IPrintMsg) ctx.getBean("testMsg2");
+		printMsg.hello2();
 	}
 }
